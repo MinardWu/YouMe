@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <ListView
+                android:id="@+id/listview_mainactivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_forload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_load"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/icon_add"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/main"
+        fab:fab_colorRipple="@color/white" />
+
+</RelativeLayout>

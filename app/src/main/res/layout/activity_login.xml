@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        tools:context="com.minardwu.youme.aty.LoginActivity">
+
+        <ImageView
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_logo"
+            android:layout_width="120dp"
+            android:layout_height="85dp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号"
+                android:singleLine="true"
+                app:met_baseColor="@color/et_hint"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/main" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:imeOptions="actionDone"
+                android:paddingBottom="30dp"
+                android:singleLine="true"
+                app:met_baseColor="@color/et_hint"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/main" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_radius_clickable"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_noaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="还没账号？" />
+
+            <TextView
+                android:id="@+id/tv_forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="忘记密码？" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

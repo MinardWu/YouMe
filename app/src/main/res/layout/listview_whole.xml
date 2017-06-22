@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_listview_user1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                fresco:placeholderImage="@drawable/icon_userportrait"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="#ffffff"
+                fresco:roundingBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/tv_listview_username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/main" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_listview_username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/main" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_listview_user2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                fresco:placeholderImage="@drawable/icon_userportrait"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="#ffffff"
+                fresco:roundingBorderWidth="2dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_listview_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            fresco:placeholderImage="@drawable/placeholderimage"
+            fresco:viewAspectRatio="1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_listview_love"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/tv_listview_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/et_hint" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_listview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/et_hint" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
